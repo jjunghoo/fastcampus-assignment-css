@@ -5,10 +5,138 @@
 <title>page info</title>
 <meta name="robots" content="all" />
 <link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
-<style type="text/css"></style>
+<style type="text/css">
+    .wrap {
+        border: 2px solid gray;
+        width: 675px;
+        margin: 2px;
+    }
+    header {
+        /* border: 1px solid red; */
+        position: relative;
+        /* float: left; */
+        padding: 5px 10px;
+        margin: 13px 5px 5px 5px;
+    }
+    header > .title {
+        /* border: 1px solid blue; */
+        float: left;
+        /* width: 85px; */
+        margin-right: 3px;
+    }
+    header > .title img {
+        padding-top: 2px;
+        padding-right: 4px;
+        padding-left: 5px;
+        transform: scale(1.1);
+    }
+    header > ul.sub_title {
+        /* float: left; */
+        /* border: 1px solid darkgreen; */
+        /* width: 294px; */
+        overflow: hidden;
+    }
+    header > .title > span {
+        vertical-align: text-bottom;
+    }
+    header > .title > span > a {
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    header > ul.sub_title img {
+        padding-top: 3px;
+    }
+    header > ul.sub_title * {
+        float: left;
+        text-decoration: none;
+    }
+    header > ul.sub_title a {
+        padding: 0px 4px 0px 5px;
+        color: gray;
+        font-weight: bold;
+        font-size: 12px;
+    }
+    .openCast {
+        border: 2px solid rgb(211, 208, 208);
+        position: absolute;
+        top: 0px;
+        right: 10px;
+        padding: 5px 5px 2px 10px;
+    }
+    .openCast:hover + .openCast_list {
+        display: block;
+    }
+    .openCast span >a {
+        color: black;
+        font-weight: bold;
+        margin-right: 34px;
+        /* padding-top: 5px; */
+        text-decoration: none;
+    }
+    .openCast img {
+        padding: 3px;
+        transform: scale(1.1);
+    }
+    .openCast_list {
+        border: 1px solid indigo;
+        position: absolute;
+        top: 25px;
+        right: 11px;
+        text-align: center;
+        display: none;
+    }
+    .openCast_list:hover {
+        display: block;
+    }
+    .openCast_list li > a  {
+        text-decoration: none;
+        z-index: 1;
+        padding: 0 27px;
+        margin: 2px;
+        display: inline-block;
+    }
+</style>
 </head>
 <body>
-    
+    <div class="wrap">
+        <header>
+            <div class="title">
+                <img src="images/h3_opencast.gif" alt="오픈캐스트">
+                <span><a href="">종합</a></span>
+            </div>
+            <ul class="sub_title">
+                <img src="images/line_h.gif" alt="line_hight">
+                <li><a href="">라이프/취미</a></li>
+                <img src="images/line_h.gif" alt="line_hight">
+                <li><a href="">문화/엔터</a></li>
+                <img src="images/line_h.gif" alt="line_hight">
+                <li><a href="">IT/비즈/학습</a></li>
+                <img src="images/line_h.gif" alt="line_hight">
+                <li><a href="">여행</a></li>
+                <img src="images/line_h.gif" alt="line_hight">
+                <li><a href="">요리</a></li>
+                <img src="images/line_h.gif" alt="line_hight">
+                <li><a href="">MY캐스트</a></li>
+            </ul>
+            <div class="openCast">
+                <span><a href="">캐스트목록</a></span>
+                <img src="images/bul_down.gif" alt="목록보기 이미지">
+            </div>
+            <ul class="openCast_list">
+                <li><a href="">라이프/취미</a></li>
+                <li><a href="">문화/엔터</a></li>
+                <li><a href="">IT/비즈/학습</a></li>
+                <li><a href="">여행</a></li>
+                <li><a href="">요리</a></li>
+                <li><a href="">MY캐스트</a></li>
+            </ul>
+        </header>
+        <hr>
+        <main>
+            <section></section>
+        </main>
+    </div>
 </body>
 </html>
 
