@@ -7,7 +7,7 @@
 <link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
 <style type="text/css">
     .wrap {
-        border: 2px solid gray;
+        border: 2px solid rgb(211, 208, 208);
         width: 675px;
         margin: 2px;
     }
@@ -16,7 +16,7 @@
         position: relative;
         /* float: left; */
         padding: 5px 10px;
-        margin: 13px 5px 5px 5px;
+        margin: 13px 5px 11px 5px;
     }
     header > .title {
         /* border: 1px solid blue; */
@@ -61,7 +61,7 @@
         border: 2px solid rgb(211, 208, 208);
         position: absolute;
         top: 0px;
-        right: 10px;
+        right: 15px;
         padding: 5px 5px 2px 10px;
     }
     .openCast:hover + .openCast_list {
@@ -70,31 +70,147 @@
     .openCast span >a {
         color: black;
         font-weight: bold;
-        margin-right: 34px;
+        margin-right: 29px;
         /* padding-top: 5px; */
         text-decoration: none;
     }
     .openCast img {
-        padding: 3px;
+        padding: 4px;
         transform: scale(1.1);
     }
     .openCast_list {
-        border: 1px solid indigo;
+        border: 2px solid rgb(211, 208, 208);
         position: absolute;
         top: 25px;
-        right: 11px;
+        right: 16px;
         text-align: center;
         display: none;
+        background-color: white;
+        z-index: 1;
     }
     .openCast_list:hover {
         display: block;
     }
+    .openCast_list li:hover {
+        background-color: gray;
+    }
     .openCast_list li > a  {
         text-decoration: none;
         z-index: 1;
-        padding: 0 27px;
+        padding: 0 25px 0 24px;
         margin: 2px;
         display: inline-block;
+        color: black;
+        font-weight: bold;
+    }
+    
+
+    /* section */
+    section {
+        /* border: 1px solid red; */
+        margin: 5px 5px 35px 5px;
+        position: relative;
+        /* overflow: auto; */
+    }
+    section > .hot_story {
+        /* border: 1px solid dodgerblue; */
+        margin: 5px 5px 0 5px;
+        overflow: hidden;
+    }
+    section > .hot_story > p:nth-child(1) {
+        float: left;
+        font-weight: bold;
+        color: black;
+        font-size: 13px;
+        margin: 3px 3px 4px 5px;
+    }
+    section > .hot_story > p:nth-child(2) {
+        color: gray;
+        font-weight: bold;
+        font-size: 11px;
+        /* border: 1px solid limegreen; */
+        margin-top: 5px;
+        display: inline-block;
+    }
+    section > article {
+        margin: 5px;
+    }
+    section > article > ul {
+        /* border-right: 1px solid blueviolet; */
+        /* float: left; */
+        display: inline-block;
+        padding: 0 27px 5px 5px;
+        overflow: hidden;
+
+    }
+    section > article > ul li {
+        display: inline-block;
+        padding: 2px;
+    }
+    section > article > ul li:nth-child(1) {
+        margin-right: 4px;
+    }
+    section > article > ul li:nth-child(2) {
+        margin-right: 20px;
+    }
+    section > article > ul li:nth-child(3) {
+        margin-right: 17px;
+    }
+    section > article > ul > li > a {
+        font-size: 12px;
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+    }
+    section > article > ul > li > a > p {
+        padding-top: 3px;
+    }
+    section > article > ul li:nth-child(1) a img {
+        width: 100%;
+    }
+    section > article > ul li:nth-child(2) a img {
+        width: 116%;
+    }
+    section > article > ul li:nth-child(3) a img {
+        width: 112%;
+    }
+    section > article > ul li:nth-child(4) a img {
+        width: 116%;
+    }
+    section > article > .subscribe {
+        border-left: 2px solid #efeded;
+        display: inline-block;
+        padding-left: 10px;
+        /* margin-left: 10px; */
+        position: absolute;
+        width: 100px;
+        /* margin-top: 3px; */
+    }
+    section > article > .subscribe > p:nth-child(1) {
+        font-size: 13px;
+        color: green;
+        font-weight: bold;
+        padding-top: 4px;
+    }
+    section > article > .subscribe > p:nth-child(2) {
+        font-weight: bold;
+        font-size: 13px;
+    }
+    section > article > .subscribe > a img {
+        width: 70%;
+        margin: 11px 0 14px 3px;
+    }
+    section > article > aside {
+        /* float: right; */
+        /* border: 1px solid black; */
+        margin-right: 10px;
+        position: absolute;
+        right: 2px;
+    }
+    section > article > aside > p {
+        float: left;
+        padding: 2px 8px;
     }
 </style>
 </head>
@@ -134,7 +250,50 @@
         </header>
         <hr>
         <main>
-            <section></section>
+            <section>
+                <div class="hot_story">
+                    <p>요즘 가장 많이 찾는 화제의 스토리</p>
+                    <p>No.1705</p>
+                </div>
+                <article>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="images/img1.jpg" alt="img1">
+                                <p>운동화 신어도 우월해</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/img2.jpg" alt="img2">
+                                <p>주군이 질투하겠어</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/img3.jpg" alt="img3">
+                                <p>갈수록 더 어려지내</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/img4.jpg" alt="img4">
+                                <p>너 정말 겁 없구나</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="subscribe">
+                        <p>요즘 뜨는 이야기</p>
+                        <p>128,091명 구독</p>
+                        <a href=""><img src="images/btn_read.gif" alt="구독하기"></a>
+                    </div>
+                    <aside>
+                        <p><strong>1</strong>/51</p>
+                        <a href=""><img src="/images/btn_pagearrow.gif" alt="img_pagearrow"></a>
+                    </aside>
+                </article>
+            </section>
+            
         </main>
     </div>
 </body>
